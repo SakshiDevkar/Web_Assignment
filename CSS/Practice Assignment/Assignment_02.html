@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 02</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px; 
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: white;
+        }
+        header div{
+            display: inline-block;
+        }
+        header a{
+            text-decoration: none;
+            color: black;
+            margin: 0% 5px;
+        }
+        .Nav3{
+            margin-left:26%;
+        }
+        .Nav2 {
+            font-weight: bold;
+        }
+        .Nav4 button{
+            text-decoration: none;
+            background-color: white;
+            border: 0;
+        }
+        .Main01{
+            margin-top: 20px;
+            display: flex;           
+        }
+        #input{
+            padding: 6px;
+            width: 400px;
+            background-color: rgb(221, 218, 218);
+            border: 0;
+        }
+        #btn{
+            padding: 6px;
+            background-color:rgb(19, 114, 82);
+            color: white;
+            border: 0;
+        }
+        #main a{
+            text-decoration: none;
+            color: black;
+        }
+        .div01{
+           font-weight: bold; 
+           margin-left: 400px;
+        }
+        .div03{
+            font-weight: bolder;   
+            margin-left: 20px;         
+        }
+        .div05{
+            font-weight:900 ;
+            margin-left: 20px;
+        }
+        .div07{
+            margin-left: 20px;
+        }
+        .Main02{
+            background-color: rgb(226, 164, 141);
+            margin-top: 10px;
+            display: flex;
+            margin-bottom: 0%;
+        }
+        .cls01{
+          flex-grow: 10;
+          height: 250px;
+          width: 250px;
+          margin: 0%;
+          position: relative;
+        }
+        .cls02{
+          flex-grow: 0;
+          height: 250px;
+          position: relative;
+          margin-left: 0%;
+        }
+        .text02{
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: white;
+        }
+        .btn01{
+            background-color: black;
+            padding: 7px;
+            color: white;
+        }
+        .btn02{
+            text-decoration: none;
+            color:white;
+            border: 0;
+            background-color: rgb(7, 68, 7);            
+        }
+        table{
+            height: 100px;
+            width: 100%;
+        }
+        .mainbar01{
+            margin:15px 0px;
+        }
+        .images{
+            position: relative;
+        }
+        .img01{
+            position: absolute;
+            top: 0;
+            margin-left: 5px;
+        }
+        .images01{
+            position: relative;
+            margin-top: 50px;
+        }
+        .txt{
+            position: absolute;
+            border: 1px solid black;
+            color: white;
+            background-color: black;
+            top: 200px;
+            padding: 5px;
+        }
+        .Main03{
+            display: flex;
+            flex-direction: column;
+            margin: 15px;
+            position: relative;
+        }
+        .mainbar{
+            margin-left: 60%;
+        }
+       .sidebar{
+            position: absolute;
+            margin-left: 250px;
+       }
+       .sidebar h1{
+            font-weight: bolder;
+            margin-bottom: 100px;
+            padding: 5px;
+       }
+       .Main04{
+        background-color: rgb(146, 140, 140);
+       }
+       .btn04{
+        padding: 5px;
+        background-color: black;
+        color: white; 
+        margin-left: 45%;
+        margin-bottom: 10px;
+       }
+       .design01{
+        display: flex;
+        flex-direction:row;
+        margin: 20px ;
+       }
+       .first01{
+        border: 1px solid black;
+        background-color: white;
+        height: 300px;
+        width: 50;
+       }
+       .first1{
+        margin: 5px 30px;
+       }
+       .first2{
+        margin: 0px 60px;
+       }
+       .head{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+       }
+       .first03{
+        display: flex;
+        background-color: white;
+        margin: 0px 15px;
+        height: 300px;
+        width: 50;
+       }
+       .first3 a{
+        text-decoration: none;
+        color: black;
+        margin: 10px;
+       }
+       .first3 div{
+        margin: 10px;
+       }
+       .first4{
+        margin-left: 30px;
+        position: relative;
+       }
+       .txt01{
+        position: absolute;
+        margin-left: 250px;
+        margin-top: 100px;
+       }
+       .first5{
+        background-color: white;
+       }
+       .header{
+        background-color: rgb(25, 190, 25);
+       }
+       .first6{
+        display: flex;
+       }
+       .imge02{
+        margin-left: 40px;
+        margin-top: 7px;
+       }
+       .imges03{
+        margin-left: 15px;
+       }
+       .first6 p{
+        margin-top: 7px;
+        margin-left: 20px;
+       }
+       .first5 h2{
+        text-align: center;
+       }
+       .first5 h5{
+        text-align: center;
+       }
+       .but01{
+        background-color: black;
+        padding: 5px;
+        color: white;
+        margin-left: 30%;
+        margin-bottom: 5px;
+       }
+       .imges04{
+        margin-left: 70%;
+       }
+       .imges05{
+        display: inline-block;
+        margin-left: 40%;
+       }
+       footer{
+        background-color: black;
+        color: white;
+       }
+       .foot01{
+        display: flex;
+       }
+       .footer01{
+        margin-right: 40%;
+        margin-top: 10px;
+        margin-left: 10px;
+        padding: 20px;
+       }
+       .footer02{
+        margin: 30px;
+       }
+       .f1{
+        padding: 5px;
+        width: 300px;
+        background-color: rgb(46, 45, 45);
+        border: 0;
+       }
+       .b1{
+        padding: 5px 0px;
+        background-color: white;
+        color: black;
+        border: 0;
+       }
+       .A2{
+       margin-top: 10px;
+       display: inline;
+       }
+       .A1{
+        text-decoration: none;
+        color: white;
+        margin-top: 0;
+        margin-left: 10px;
+       }
+       .foot02{
+        display: flex;
+        padding: 15px;
+       }
+       .Navbar a{
+        text-decoration: none;
+        color: white;
+        margin: 60px;
+       }
+       .Navbar{
+        padding: 7px;
+       }
+       .Navbar1 a{
+        text-decoration: none;
+        color: white;
+        margin: 60px;
+       }
+       .Navbar1{
+        font-weight: bold;
+        padding: 7px;
+        margin-bottom: 15px;
+       }
+       select{
+        margin-left: 30px;
+       }
+       .f3{
+        display: inline-block;
+        margin-left: 55%;
+       }
+       .Num{
+        display: flex;
+       }
+       .Navbar2 a{
+        text-decoration: none;
+        color: white;
+       }
+       .Navbar2{
+        display: inline;
+        padding: 10px;
+       }
+       .n2 {
+        margin: 10px;
+        margin-left: 10%;
+       }
+       .n2 p{
+        margin: 10px;
+        padding-top: 10px;
+       }
+       .n1{
+        margin: 10px;
+       }
+       .n1 p{
+        padding: 5px;
+       }
+       span{
+        color: aqua;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="Nav"><img src="GoDaddy img.png" alt="GoDaddy img" height="40px" width="50px"></div>
+        <div class="Nav2"><a href="#">GoDaddy</a></div>
+        <div class="Nav"><a href="#">Domain Names</a></div>
+        <div class="Nav"><a href="#">Websites & Hosting</a></div>
+        <div class="Nav"><a href="#">Commerce</a></div>
+        <div class="Nav"><a href="#">Email & Marketing</a></div>
+        <div class="Nav"><a href="#">Expert Services</a></div>
+        <div class="Nav"><a href="#">More</a></div>
+        <div class="Nav3"><a href="#">Help Center</a></div>
+        <div class="Nav4"><a href="#"><button type="button">Sign in </button></a></div>
+        <div class="Nav"><img src="shoping trolly.png" alt="shoping trolly img" height="20px" width="20px" ></div>
+    </header>
+    <section class="Main01">
+        <div class="mainn"><input id="input" type="text" placeholder="Type the domain you want"><button id="btn" type="button">Search Domain</button></div>
+        <div id="main">
+            <a class="div01" href="">.online</a>
+            <a class="div02" href="">$0.99*</a>
+            <a class="div03" href="">.net</a>
+            <a class="div04" href="">$14.99*</a>
+            <a class="div05" href="">.inc</a>
+            <a class="div06" href="">$999.99*</a>
+            <a class="div07" href=""><img src="hat.jpg" alt="img" height="20px" width="20px"></a>
+            <a class="div08" href="">$11.99</a>
+        </div>
+    </section>
+    <section class="Main02">
+        <div class="cls01">
+            <img src="nature01.jpg" alt="img" height="100%" width="99.5%">
+            <div class="text02"> 
+                <h5>Websites & Commerce</h5><br><br>
+                <h1>Tools for all your<br> business firsts.</h1><br><br>
+                <h5>Websites and store solution for any small business</h5><br>
+                <button class="btn01" type="button">Get Started</button>
+                <button class="btn02" type="button">Learn more</button></div>
+        </div>
+        <div class="cls02">
+            <img src="bird.jpg" alt="img" height="100%">
+            <div class="text02">
+                <h5>Domain Names</h5><br>
+                <h1>Tools for all your<br> business firsts.</h1><br>
+                <h5>Websites and store solution for any small business</h5><br>
+                <button class="btn01" type="button">Find your Domain</button><br><br>
+                <h5>Websites and store solution for any small business</h5><br>
+           </div>
+        </div>
+    </section>
+    <section>
+        <table border="1px solid" style="border-collapse:collapse">
+            <tr>
+                <th colspan="2">Domains</th>
+                <th colspan="2">Commerce</th>
+                <th colspan="2">WordPress</th>
+                <th colspan="2">Website</th>
+                <th colspan="2" rowspan="2"><h1>.shop</h1><br>Websites and store solution <br> Any small business</th>
+            </tr>
+            <tr>
+                <th colspan="2">Email & Marketing</th>
+                <th colspan="2">Websites & Hosting</th>
+                <th colspan="2">Expert Services</th>
+                <th colspan="2">Online Store</th>
+            </tr>
+            </tr>
+        </table>
+    </section>
+    <section class="Main03">  
+        <div class="mainbar">
+            <div class="images"><img src="flower.jpg" alt="" height="400px" width="150px"></div>
+              <div class="img01">
+                <img src="GoDaddy img.png" alt="" height="60px" width="30px">
+                <button type="button">Click here</button>
+            </div>
+            <h6>01</h6>
+            <h3>Save with the lowest fees</h3>
+            <h5>2.3% + 0$ per in person transaction.</h5>
+            <h5>2.3% + 0$ per in person transaction.</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <button class="btn01" type="button">Get Started</button>
+            <button class="btn02" type="button">Learn more</button>
+        </div>
+        <div class="sidebar">
+            <h1>Success in <br>3 easy steps.</h1>
+           <div class="images01"><img src="butterfly.jpg" alt="" height="500px" width="250px"></div>
+               <div class="txt">
+               <h6>simple</h6>
+               <h2>2.3%</h2>
+               <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit.</p>
+               </div>
+           <h6>02</h6>
+           <h3>Save with the lowest fees</h3>
+           <h5>2.3% + 0$ per in person transaction.</h5>
+           <h5>2.3% + 0$ per in person transaction.</h5>
+           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+           <button class="btn01" type="button">Get Started</button>
+           <button class="btn02" type="button">Learn more</button></div>
+       </div>
+        <div class="mainbar">
+            <div><img src="flower01.jpg" alt="" height="400px" width="150px"></div>
+            <h6>03</h6>
+            <h3>Save with the lowest fees</h3>
+            <h5>2.3% + 0$ per in person transaction.</h5>
+            <h5>2.3% + 0$ per in person transaction.</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <button class="btn01" type="button">Get Started</button>
+            <button class="btn02" type="button">Learn more</button>
+       </div>
+    </section>
+    <section class="Main04">
+        <div class="head">
+            <h1>Templates designed to sell</h1><br>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+        </div>
+        <div class="design01">
+            <div class="first01">
+                <div class="first1">
+                    <h5>images refelection</h6><br><br>
+                    <h6>Templates designed</h6><br>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Fugit,omnis asperiores.</h3><br>
+                    <button type="button">Get Started</button><br><br>
+                </div>
+               <div class="first2">
+                <img src="bird.jpg" alt="" height="70px" width="100px">
+                <img src="elephant.jpg" alt="" height="70px" width="100px">
+                <img src="nature03.jpg" alt="" height="70px" width="100px">
+               </div>
+            </div>
+            <div class="first03">
+                <div class="first3">
+                    <img src="hat.jpg" alt="" height="60px" width="60px">
+                    <div><a href="#">GoDaddy</a></div>
+                    <div><a href="#">Domain</a></div>
+                    <div><a href="#">Websites</a></div>
+                    <div><a href="#">Commerce</a></div>
+                    <div><a href="#">Email</a></div>
+                    <div><a href="#">Services</a></div>
+                </div>
+                <div class="first4"><img src="nature04.webp" alt="" height="100%" width="500px"></div>
+                <div class="txt01">
+                    <h3>Feel better <br>the natural ways</h3> 
+                    <button type="button">Click here</button>
+                </div>
+            </div>
+            <div class="first5">
+                <header class="header">Lorem ipsum dolor <br> Customer</header>
+                <div class="first6">
+                    <div class="imges01"><img src="GoDaddy img.png" alt="GoDaddy img" height="30px" width="40px"></div>
+                    <div class="imges03"><img src="hat.jpg" alt="" height="30px" width="30px"></div>
+                    <p>Hat</p>
+                    <div class="imge02"><img src="shoping trolly.png" alt="shoping trolly img" height="15px" width="20px" ></div>
+                </div>
+                <img src="bird.jpg" alt="" height="70px" width="200px">
+                <h2>Great Stories <br> Reside Here</h2>
+                <h5>Lorem ipsum, dolor sit <br> amet consectetur adipisicing elit</h5>
+                <button class="but01" type="button">Shop Now</button>
+                <div class="imges04"><img src="hat.jpg" alt="" height="30px" width="30px"></div>
+            </div>
+        </div>
+        <button class="btn04" type="button">Browse All Templates</button>  
+        <div class="imges05"><img src="GoDaddy img.png" alt="" height="25px" width="30px"></div>    
+    </section>
+    <footer>
+       <div class="foot01">
+        <div class="footer01">
+            <h5>Lorem ipsum dolor sit amet consectetur</h5><br>
+            <input class="f1" type="text" placeholder="Type the domain you want"><button class="b1" type="button">Search Domain</button>
+        </div>
+        <div class="footer02">
+            <h5>Lorem ipsum dolor sit amet consectetur</h5><br>
+            <div class="f2">
+                <img class="A3" src="GoDaddy img.png" alt="" height="20px" width="30px">
+                <a class="A1" href="">GoDaddy guides</a>
+            <div class="A2"><img src="arrow01.jpg" alt="arrow imgs" height="10px" width="50"></div>
+            </div>
+        </div>
+       </div>
+
+       <hr style="color:white;width: 100%;"> 
+
+       <div class="foot02">
+        <div>
+            <div class="Navbar1"><a href="#">About GoDaddy</a></div>
+            <div class="Navbar"><a href="#">Domain Names</a></div>
+            <div class="Navbar"><a href="#">Websites & Hosting</a></div>
+            <div class="Navbar"><a href="#">Commerce</a></div>
+            <div class="Navbar"><a href="#">Email & Marketing</a></div>
+            <div class="Navbar"><a href="#">Expert Services</a></div>
+            <div class="Navbar"><a href="#">More</a></div>
+            <div class="Navbar"><a href="#">Help Center</a></div>
+       </div>
+       <div>
+            <div class="Navbar1"><a href="#">Resource</a></div>
+            <div class="Navbar"><a href="#">Domain Names</a></div>
+            <div class="Navbar"><a href="#">Websites & Hosting</a></div>
+            <div class="Navbar"><a href="#">Commerce</a></div>
+            <div class="Navbar"><a href="#">Email & Marketing</a></div>
+            <div class="Navbar"><a href="#">Expert Services</a></div>
+            <div class="Navbar"><a href="#">More</a></div>
+            <div class="Navbar"><a href="#">Help Center</a></div>
+            <div class="Navbar"><a href="#">Expert Services</a></div>
+            <div class="Navbar"><a href="#">More</a></div>
+       </div>
+       <div>
+            <div class="Navbar1"><a href="#">Partner</a></div>
+            <div class="Navbar"><a href="#">Domain Names</a></div>
+            <div class="Navbar"><a href="#">Websites & Hosting</a></div>
+            <div class="Navbar"><a href="#">Commerce</a></div>
+            <div class="Navbar"><a href="#">Email & Marketing</a></div>
+            <div class="Navbar"><a href="#">Expert Services</a></div>
+            <div class="Navbar"><a href="#">More</a></div>
+            <div class="Navbar"><a href="#">Help Center</a></div>
+       </div>
+       <div>
+            <div class="Navbar1"><a href="#">Account</a></div>
+            <div class="Navbar"><a href="#">Domain Names</a></div>
+            <div class="Navbar"><a href="#">Websites & Hosting</a></div>
+            <div class="Navbar"><a href="#">Commerce</a></div>
+            <div class="Navbar"><a href="#">Email & Marketing</a></div>
+       </div>
+       <div>
+            <div class="Navbar1"><a href="#">Shopping</a></div>
+            <div class="Navbar"><a href="#">Domain Names</a></div>
+            <div class="Navbar"><a href="#">Websites & Hosting</a></div>
+            <div class="Navbar"><a href="#">Commerce</a></div>
+            <div class="Navbar"><a href="#">Email & Marketing</a></div>
+            <div class="Navbar"><a href="#">Expert Services</a></div>
+            <div class="Navbar"><a href="#">More</a></div>
+            <div class="Navbar"><a href="#">Help Center</a></div>
+       </div>
+       </div>
+       <div class="foot03">
+        <div class="f2">
+            <img class="A3" src="GoDaddy img.png" alt="" height="20px" width="30px">
+            <a class="A1" href="">GoDaddy guides</a>
+            <select>
+                <option value="Select">united kingdom-English</option>
+            </select>
+            <select>
+                <option value="Select">USA</option>
+            </select>
+            <div class="f3">
+                <a href="http://www.Instagram.com" target="_blank"><img src="Insta_Logo.jpg" height="30px" width="30px" alt="image01"></a>
+                <a href="http://www.Facebook.com" target="_blank"><img src="Facebook_Logo.png" height="30px" width="30px" alt="image02"></a>
+                <a href="http://www.snapchat.com" target="_blank"><img src="Snapchat_Logo.png" height="30px" width="30px" alt="image03"></a>
+                <a href="http://www.whatsapp.com" target="_blank"><img  src="Whatsapp_Logo.png" height="30px" width="30px" alt="image04"></a>
+            </div>
+       </div>
+       <hr style="color:white;width: 100%;"> 
+       <div class="Num">
+        <div class="n1">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos quo possimus, nobis atque dolorum provident dolore expedita ipsam fuga Quos.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <span>Laboriosam quas quam labore</span></p>
+        </div>
+        <div class="n2">
+            <div class="Navbar2"><a href="#">Legal</a></div>
+            <div class="Navbar2"><a href="#">Privacy Policy</a></div>
+            <div class="Navbar2"><a href="#">Cookies</a></div>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+       </div>
+    </footer>
+</body>
+</html>
